@@ -34,6 +34,11 @@ def main():
     print(limo)
 
 
+    print("="*50)
+
+    Audi = Car("Audi RS7", 500)
+    Audi.drive(120)
+    print(Audi)
 
 
 main()
