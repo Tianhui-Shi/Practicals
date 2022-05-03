@@ -20,15 +20,11 @@ def main():
 
     print("These are my guitars: ")
     for i, guitar in enumerate(guitars_list):
-        #guitars_list.sort()
+
         vintage_string = ""
         if guitar.is_vintage():
             vintage_string = " (vintage)"
-        print("Guitar {0}: {1.name:>20} ({1.year}), worth ${1.cost:10,.2f}{2}".format(i + 1, guitar, vintage_string))
-
-
-
-
+        print("Guitar {0}: {1.name:>24} ({1.year}), worth ${1.cost:15,.2f}{2}".format(i+1, guitar, vintage_string))
 
 
 if __name__ == '__main__':

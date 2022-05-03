@@ -4,9 +4,11 @@ def main():
     year = 1922
     cost = 16035.40
 
+    # add two guitar
     guitar = Guitar(name, year, cost)
     other = Guitar("Another Guitar", 2012, 1512.9)
 
+    # print the result
     print("{} get_age() - Expected {}. Got {}".format(guitar.name, 95,guitar.get_age()))
     print("{} get_age() - Expected {}. Got {}".format(other.name, 5,other.get_age()))
     print()
