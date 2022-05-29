@@ -1,4 +1,4 @@
-import wikipedia as wiki
+import wikipedia
 
 def main():
 
@@ -6,12 +6,12 @@ def main():
     while user_input != 'q':
 
         try:
-            search_page = wiki.page(user_input)
+            search_page = wikipedia.page(user_input)
             print("Title: {}".format(search_page.title))
-            print(wiki.summary(user_input))
+            print(wikipedia.summary(user_input))
             print("URL: {}".format(search_page.url))
             user_input = input("Enter a page title or search phrase: ")
-        except wiki.exceptions.DisambiguationError as ex:
+        except wikipedia.exceptions.DisambiguationError as ex:
             print(ex.options)
             user_input = input("Enter a page title or search phrase: ")
 
